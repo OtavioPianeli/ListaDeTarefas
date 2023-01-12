@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0em;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 36%, rgba(0, 212, 255, 1) 100%);
+}
+
+#botao-adicionar {
+    background: #4169E1;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 15px;
+    border: nome;
+    color: #191970;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+    float: right;
+
+}
+
+#botao-adicionar:hover {
+    opacity: 0.5;
+}
+
+#botao-adicionar:active {
+    opacity: 0.3;
+}
+
+.container {
+    background: white;
+    width: 541px;
+    border-radius: 5px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#input-principal {
+    width: 342px;
+    height: 40px;
+    border: 2px solid #00ff;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+#tarefas {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.iten-tarefa {
+    border-radius: 5px;
+    background: white;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 45px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+}
+
+.nome-tarefa {
+    color: #191970;
+    font-size: 15px;
+}
+
+.botao-delete {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.fa-trash {
+    color: red;
+}
+
+.botao-check {
+    border: none;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fa-circle-check {
+    color: black
+}
+
+.iten-tarefa:hover .botao-delete{
+opacity: 1;
+}
+.iten-tarefa:hover .botao-check{
+    opacity: 1;
+}
+
+.concluido{
+    background-color: aquamarine;
+    text-decoration: line-through;
+}
